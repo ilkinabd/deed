@@ -1,0 +1,9 @@
+services:
+  web:
+    image: nginx:alpine
+    container_name: evde_fizik_tedavi_web
+    restart: always
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/usr/share/nginx/html:ro

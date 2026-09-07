@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anadolu Yakası Evde Fizyoterapi & Manuel Terapi | Hızlı Randevu</title>
+    <meta name="description"
+        content="Kadıköy, Ataşehir, Üsküdar ve Maltepe bölgesinde evinizde uzman fizyoterapist hizmeti. Bel/boyun ağrıları, felç rehabilitasyonu ve medikal terapi için hemen WhatsApp'tan ulaşın.">
+
+    <!-- Meta Pixel Code (Reklam Takibi İçin Bu Alana Kodunuzu Yapıştırın) -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'BURAYA_META_PIXEL_ID_YAZIN');
+        fbq('track', 'PageView');
+    </script>
+    <!-- End Meta Pixel Code -->
+
+    <style>
+        :root {
+            --primary-color: #0084FF;
+            /* Meta Mavi / Güven Tonu */
+            --whatsapp-green: #25D366;
+            --dark-navy: #0F172A;
+            --light-bg: #F8FAFC;
+            --text-color: #334155;
+            --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding-bottom: 80px;
+            /* Sabit WhatsApp butonu için boşluk */
+        }
+
+        /* Üst Bilgilendirme Bandı */
+        .top-bar {
+            background-color: var(--dark-navy);
+            color: #fff;
+            text-align: center;
+            padding: 8px 12px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            background: #ffffff;
+            min-height: 100vh;
+        }
+
+        /* Hero / Karşılama Alanı */
+        .hero {
+            padding: 24px 20px;
+            text-align: center;
+            background: linear-gradient(180deg, #EBF5FF 0%, #FFFFFF 100%);
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #E0F2FE;
+            color: #0369A1;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 50px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .hero h1 {
+            color: var(--dark-navy);
+            font-size: 24px;
+            line-height: 1.3;
+            margin-bottom: 12px;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 15px;
+            color: #475569;
+            margin-bottom: 20px;
+        }
+
+        /* Hizmet Bölgeleri Etiketleri */
+        .locations {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px;
+            margin-bottom: 20px;
+        }
+
+        .location-tag {
+            background-color: #F1F5F9;
+            color: #475569;
+            font-size: 12px;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+
+        /* Ana Çağrı Butonları */
+        .cta-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 15px 0;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .btn-whatsapp {
+            background-color: var(--whatsapp-green);
+            color: #ffffff;
+            box-shadow: 0 4px 14px rgba(37, 211, 102, 0.39);
+        }
+
+        .btn-phone {
+            background-color: var(--dark-navy);
+            color: #ffffff;
+        }
+
+        /* Hizmet Kartları */
+        .section {
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            color: var(--dark-navy);
+            margin-bottom: 16px;
+            font-weight: 700;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 10px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+        }
+
+        .service-card {
+            background: #ffffff;
+            border: 1px solid #E2E8F0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px -5px rgba(0, 0, 0, 0.08);
+        }
+
+        .service-image-wrapper {
+            position: relative;
+            width: 100%;
+            height: 190px;
+            background-color: #F1F5F9;
+            overflow: hidden;
+        }
+
+        .service-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover .service-img {
+            transform: scale(1.03);
+        }
+
+        .service-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(4px);
+            color: #ffffff;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .service-info {
+            padding: 16px;
+        }
+
+        .service-info h3 {
+            font-size: 16px;
+            color: var(--dark-navy);
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+
+        .service-info p {
+            font-size: 13.5px;
+            color: #64748B;
+            line-height: 1.5;
+        }
+
+        /* Süreç ve Güven Unsurları */
+        .features {
+            background-color: #F8FAFC;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #334155;
+            font-weight: 500;
+        }
+
+        .feature-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .check-mark {
+            color: var(--whatsapp-green);
+            font-weight: bold;
+        }
+
+        /* Ekranın Altında Sabit Duran WhatsApp Butonu (Mobil Dönüşüm Odaklı) */
+        .sticky-bottom {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #ffffff;
+            padding: 12px 20px;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.08);
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .sticky-bottom .btn {
+            width: 100%;
+            max-width: 560px;
+            padding: 14px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-bar">
+        📍 Anadolu Yakası Özel Evde Seans Hizmeti
+    </div>
+
+    <div class="container">
+
+        <!-- Hero Bölümü -->
+        <header class="hero">
+            <span class="badge">Uzman Fizyoterapist</span>
+            <h1>Evinizde Konforlu Fizik Tedavi ve Manuel Terapi</h1>
+            <p>Ağrılarınızdan kurtulmanız ve hareket özgürlüğünüze kavuşmanız için klinikten farksız uzman terapiyi
+                kapınıza getiriyorum.</p>
+
+            <!-- Hizmet Bölgeleri -->
+            <div class="locations">
+                <span class="location-tag">Kadıköy</span>
+                <span class="location-tag">Ataşehir</span>
+                <span class="location-tag">Üsküdar</span>
+                <span class="location-tag">Maltepe</span>
+            </div>
+
+            <!-- Ana Dönüşüm Butonları -->
+            <div class="cta-container">
+                <a href="https://wa.me/905305799845?text=Merhaba,%20Anadolu%20Yakası%20evde%20fizik%20tedavi%20hakkında%20bilgi%20ve%20randevu%20almak%20istiyorum."
+                    class="btn btn-whatsapp" onclick="fbq('track', 'Contact');">
+                    💬 WhatsApp İle Detaylı Bilgi Alın
+                </a>
+                <a href="tel:+905305799845" class="btn btn-phone">
+                    📞 +90 530 579 98 45
+                </a>
+            </div>
+        </header>
+
+        <!-- Hizmet Alanları -->
+        <section class="section">
+            <h2 class="section-title">Uzmanlık ve Hizmet Alanları</h2>
+            <div class="services-grid">
+
+                <div class="service-card">
+                    <div class="service-image-wrapper">
+                        <img src="./images/manuel_terapi.png" alt="Manuel Terapi & Ağrı Yönetimi" class="service-img"
+                            loading="lazy">
+                        <span class="service-badge">1</span>
+                    </div>
+                    <div class="service-info">
+                        <h3>Manuel Terapi & Ağrı Yönetimi</h3>
+                        <p>Bel, boyun fıtıkları, tutulmalar ve kronik kas/eklem ağrılarına yönelik birebir elle müdahale
+                            ve rahatlatma.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image-wrapper">
+                        <img src="./images/inme_rehabilitasyonu.png" alt="Evde Felç (İnme) Rehabilitasyonu"
+                            class="service-img" loading="lazy">
+                        <span class="service-badge">2</span>
+                    </div>
+                    <div class="service-info">
+                        <h3>Evde Felç (İnme) Rehabilitasyonu</h3>
+                        <p>Nörolojik hastalıklarda (İnme, Parkinson, MS) hastanın yaşam kalitesini ve bağımsız
+                            hareketini artıracak seanslar.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image-wrapper">
+                        <img src="./images/ortopedik_rehabilitasyon.png" alt="Ortopedik Rehabilitasyon"
+                            class="service-img" loading="lazy">
+                        <span class="service-badge">3</span>
+                    </div>
+                    <div class="service-info">
+                        <h3>Ortopedik Rehabilitasyon</h3>
+                        <p>Protez, ameliyat veya kırık/çıkık sonrası hızlı ve güvenli iyileşme protokolleri.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image-wrapper">
+                        <img src="./images/geriatrik_fizik_tedavi.png" alt="Geriatrik (Yaşlı Sağlığı) Fizik Tedavi"
+                            class="service-img" loading="lazy">
+                        <span class="service-badge">4</span>
+                    </div>
+                    <div class="service-info">
+                        <h3>Geriatrik (Yaşlı Sağlığı) Fizik Tedavi</h3>
+                        <p>Yaşlı bireylerde denge, yürüyüş ve kas gücünü korumaya yönelik özel mobil seanslar.</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image-wrapper">
+                        <img src="./images/medical_masaj.png" alt="Medikal Masaj Terapisi" class="service-img"
+                            loading="lazy">
+                        <span class="service-badge">5</span>
+                    </div>
+                    <div class="service-info">
+                        <h3>Medikal Masaj Terapisi</h3>
+                        <p>Kas sertliğini gidermeye, kan dolaşımını düzenlemeye ve stresi hafifletmeye odaklı medikal
+                            dokunuşlar.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Neden Evde Fizyoterapi? (Güven Unsurları) -->
+        <div class="features">
+            <div class="feature-item">
+                <span class="check-mark">✓</span> Trafikte vakit kaybetmeden, evinizin konforunda seans imkanı.
+            </div>
+            <div class="feature-item">
+                <span class="check-mark">✓</span> Kişiye ve hastalığa özel birebir değerlendirme ve tedavi planı.
+            </div>
+            <div class="feature-item">
+                <span class="check-mark">✓</span> Klinik, tıp merkezi, otel/spa veya ev ortamına uygun esnek saatler.
+            </div>
+            <div class="feature-item">
+                <span class="check-mark">✓</span> İlk telefon/mesaj değerlendirmesi tamamen ücretsizdir.
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Alt Kısımda Sabit Duran Hızlı Mesaj Butonu -->
+    <div class="sticky-bottom">
+        <a href="https://wa.me/905305799845?text=Merhaba,%20Anadolu%20Yakası%20evde%20fizik%20tedavi%20hakkında%20bilgi%20ve%20randevu%20almak%20istiyorum."
+            class="btn btn-whatsapp" onclick="fbq('track', 'Contact');">
+            💬 WhatsApp İle Randevu Oluştur
+        </a>
+    </div>
+
+</body>
+
+</html>
