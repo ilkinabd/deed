@@ -4,9 +4,9 @@ Anadolu Yakası evde fizyoterapi ve manuel terapi randevu ve bilgilendirme web s
 
 ---
 
-## 🚀 Nginx Installation & Virtual Hosts Setup Guide for Ubuntu 24 (24.04 LTS / 24.10)
+## 🚀 Nginx & SSL Setup Guide for Ubuntu 24 (24.04 LTS / 24.10)
 
-This guide covers installing Nginx on **Ubuntu 24**, configuring permissions, deploying static files, creating single/multiple **Virtual Hosts (Server Blocks)**, and enabling HTTPS.
+This guide covers installing Nginx on **Ubuntu 24**, deploying static web assets, setting up **Virtual Hosts (Server Blocks)**, installing **Certbot**, connecting SSL certificates to custom domains, and managing automatic certificate renewals.
 
 ---
 
@@ -58,37 +58,23 @@ sudo chmod -R 755 /var/www/deed
 
 ### 4. Creating Virtual Hosts (Server Blocks)
 
-Virtual hosts (Server Blocks) allow hosting **multiple websites or subdomains** (e.g. `site1.com` and `site2.com`) on a single Ubuntu server.
+Virtual hosts (Server Blocks) allow hosting **multiple websites or subdomains** (e.g. `istanadoludeed.com` and `site2.com`) on a single Ubuntu server.
 
-#### A. Directory Structure for Multiple Sites
-
-Create separate root directories for each site:
+#### A. Create Virtual Host Configuration
 
 ```bash
-sudo mkdir -p /var/www/site1.com/html
-sudo mkdir -p /var/www/site2.com/html
-
-sudo chown -R www-data:www-data /var/www/site1.com /var/www/site2.com
-sudo chmod -R 755 /var/www/site1.com /var/www/site2.com
+sudo nano /etc/nginx/sites-available/deed
 ```
 
-#### B. Virtual Host Configuration for Site 1 (`site1.com`)
-
-Create a virtual host configuration file in `sites-available`:
-
-```bash
-sudo nano /etc/nginx/sites-available/site1.com
-```
-
-Add the server block:
+Add the server block configuration:
 
 ```nginx
 server {
     listen 80;
     listen [::]:80;
-    server_name site1.com www.site1.com;
+    server_name istanadoludeed.com www.istanadoludeed.com;
 
-    root /var/www/site1.com/html;
+    root /var/www/deed;
     index index.html;
 
     location / {
@@ -106,94 +92,129 @@ server {
 }
 ```
 
-#### C. Virtual Host Configuration for Site 2 (`site2.com`)
+#### B. Enable Virtual Host & Reload Nginx
 
 ```bash
-sudo nano /etc/nginx/sites-available/site2.com
-```
+# Enable the site configuration
+sudo ln -s /etc/nginx/sites-available/deed /etc/nginx/sites-enabled/
 
-Add the server block:
+# Disable default site (optional)
+sudo rm -f /etc/nginx/sites-enabled/default
 
-```nginx
-server {
-    listen 80;
-    listen [::]:80;
-    server_name site2.com www.site2.com;
-
-    root /var/www/site2.com/html;
-    index index.html;
-
-    location / {
-        try_files $uri $uri/ =404;
-    }
-
-    location ~* \.(png|jpg|jpeg|gif|ico|svg|css|js)$ {
-        expires 30d;
-        add_header Cache-Control "public, no-transform";
-    }
-
-    gzip on;
-}
-```
-
----
-
-### 5. Enabling & Managing Virtual Hosts
-
-Nginx uses symbolic links between `sites-available` and `sites-enabled` to activate virtual hosts.
-
-#### Enable a Virtual Host:
-
-```bash
-sudo ln -s /etc/nginx/sites-available/site1.com /etc/nginx/sites-enabled/
-sudo ln -s /etc/nginx/sites-available/site2.com /etc/nginx/sites-enabled/
-```
-
-#### Disable a Virtual Host (Without deleting the config):
-
-```bash
-sudo rm /etc/nginx/sites-enabled/site1.com
-```
-
-#### Test Configuration & Reload Nginx:
-
-Always test configuration syntax before reloading Nginx:
-
-```bash
-# Test Nginx syntax
+# Test Nginx configuration syntax
 sudo nginx -t
 
-# Reload Nginx to apply changes without downtime
+# Reload Nginx
 sudo systemctl reload nginx
 ```
 
 ---
 
-### 6. (Optional) Enable Free SSL (HTTPS) for Virtual Hosts with Certbot
+### 🔒 5. Certbot Installation & SSL Domain Configuration
 
-Secure each virtual host with Let's Encrypt SSL:
+Certbot is an automated tool that fetches free, auto-renewing SSL certificates from **Let's Encrypt** and configures HTTPS on Nginx.
+
+#### Step 5.1: Install Certbot & Nginx Plugin
 
 ```bash
+sudo apt update
 sudo apt install -y certbot python3-certbot-nginx
-
-# Obtain SSL certificates for each domain
-sudo certbot --nginx -d site1.com -d www.site1.com
-sudo certbot --nginx -d site2.com -d www.site2.com
 ```
 
-Certbot automatically modifies the corresponding virtual host configuration in `/etc/nginx/sites-available/` to enable HTTPS and HTTP-to-HTTPS redirection.
+#### Step 5.2: Connect SSL Certificate to Your Domain
+
+Make sure your domain's DNS A-record (e.g. `istanadoludeed.com`) points to your server's IP address (`207.154.247.234`).
+
+- **Obtain & Configure SSL for Single Domain**:
+
+  ```bash
+  sudo certbot --nginx -d istanadoludeed.com
+  ```
+
+- **Obtain & Configure SSL for Domain + Subdomains (e.g., `www`)**:
+
+  ```bash
+  sudo certbot --nginx -d istanadoludeed.com -d www.istanadoludeed.com
+  ```
+
+- **Non-Interactive / Automated Setup**:
+
+  ```bash
+  sudo certbot --nginx -d istanadoludeed.com --non-interactive --agree-tos -m admin@istanadoludeed.com
+  ```
+
+*Certbot will automatically update your `/etc/nginx/sites-available/deed` file to enable SSL on port 443 and add automatic HTTP-to-HTTPS redirection.*
 
 ---
 
-### 🔧 Useful Management Commands
+### 🔄 6. Updating & Renewing SSL Certificates
 
-| Action | Command |
+Let's Encrypt certificates are valid for **90 days**. Certbot handles automatic renewals via a systemd timer.
+
+#### Test Automatic Renewal (Dry Run)
+
+Test that the renewal process works properly without modifying certificates:
+
+```bash
+sudo certbot renew --dry-run
+```
+
+#### Manual Renewal
+
+To force renewal of all certificates near expiration:
+
+```bash
+sudo certbot renew
+```
+
+#### Expand / Add New Subdomains to Existing Certificate
+
+To add a new subdomain (e.g., `www.istanadoludeed.com`) to an existing certificate:
+
+```bash
+sudo certbot --nginx --expand -d istanadoludeed.com -d www.istanadoludeed.com
+```
+
+#### Check Active Certificates Status
+
+View installed certificates, domain coverage, and expiration dates:
+
+```bash
+sudo certbot certificates
+```
+
+#### Revoke or Delete a Certificate
+
+If you no longer need a certificate for a domain:
+
+```bash
+sudo certbot delete --cert-name istanadoludeed.com
+```
+
+---
+
+### ☁️ 7. Cloudflare Integration & Error 521 Prevention
+
+If using **Cloudflare** as a DNS / CDN proxy:
+
+1. **SSL/TLS Mode in Cloudflare**:
+   - Set to **Full** or **Full (Strict)** in the Cloudflare Dashboard (`SSL/TLS` -> `Overview`).
+   - If set to *Full*, Cloudflare communicates securely with Port 443 on your origin server (which is active once Certbot is configured).
+2. **Error 521 Fix**:
+   - **Error 521 ("Web server is down")** occurs when Cloudflare SSL is set to *Full*, but Port 443 is not enabled on your server. Running `sudo certbot --nginx -d yourdomain.com` opens Port 443 and resolves Error 521 instantly.
+
+---
+
+### 🔧 Useful Management Commands Cheat Sheet
+
+| Task | Command |
 | :--- | :--- |
 | **Start Nginx** | `sudo systemctl start nginx` |
-| **Stop Nginx** | `sudo systemctl stop nginx` |
-| **Restart Nginx** | `sudo systemctl restart nginx` |
-| **Reload Config** | `sudo systemctl reload nginx` |
-| **Test Syntax** | `sudo nginx -t` |
-| **List Active Virtual Hosts** | `ls -la /etc/nginx/sites-enabled/` |
-| **Access Logs** | `sudo tail -f /var/log/nginx/access.log` |
-| **Error Logs** | `sudo tail -f /var/log/nginx/error.log` |
+| **Reload Nginx Config** | `sudo systemctl reload nginx` |
+| **Test Nginx Syntax** | `sudo nginx -t` |
+| **Obtain SSL Certificate** | `sudo certbot --nginx -d domain.com` |
+| **Test SSL Auto-Renewal** | `sudo certbot renew --dry-run` |
+| **List Installed SSL Certs** | `sudo certbot certificates` |
+| **View Nginx Access Log** | `sudo tail -f /var/log/nginx/access.log` |
+| **View Nginx Error Log** | `sudo tail -f /var/log/nginx/error.log` |
+| **View Certbot Debug Log** | `sudo tail -f /var/log/letsencrypt/letsencrypt.log` |
