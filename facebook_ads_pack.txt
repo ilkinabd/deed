@@ -1,130 +1,167 @@
 ==============================================================================
-                    FACEBOOK & INSTAGRAM ADS PACK
-                 Domain: https://istanadoludeed.com/
+                   META (FACEBOOK/INSTAGRAM) ADS SETUP PACK
+                   Campaign Type: Website Traffic & Conversions
+                   Target Domain: https://istanadoludeed.com/
 ==============================================================================
 
 ------------------------------------------------------------------------------
-1. META COMPLIANCE & RE-CLASSIFICATION APPEAL TEXT
+1. WEBSITE URL (DESTINATION & LANDING PAGE)
 ------------------------------------------------------------------------------
-If Meta's automated crawler flags your site for sensitive health data, use the 
-following exact text in Meta Events Manager > Settings > Appeal / Dispute:
+- Main Website URL:
+  https://istanadoludeed.com/
 
-Dispute Explanation Text (English):
-"Our website istanadoludeed.com provides wellness coaching, mobility exercise 
-consulting, relaxation massage, and manual bodywork. We do not provide medical 
-treatments, diagnosis, or patient care. Please re-classify our domain as 
-Wellness / Fitness."
+- Target Landing Page with UTM Tracking:
+  https://istanadoludeed.com/?utm_source=facebook&utm_medium=cpc&utm_campaign=traffic_masaj_anadolu&utm_content=ad1
 
-Dispute Explanation Text (Turkish):
-"Sitemiz istanadoludeed.com sporcu masajı, mobilite danışmanlığı, duruş 
-egzersizleri ve rahatlama seansları sunmaktadır. Sitemizde tıbbi tedavi, 
-teşhis veya hastane hizmeti verilmemektedir. Etki kategorimizin Wellness / 
-Fitness olarak güncellenmesini rica ederiz."
+- WhatsApp Direct Contact URL (Secondary Destination / Opened via target="_blank"):
+  https://wa.me/905305799845?text=Merhaba,%20Anadolu%20Yakası%20evde%20masaj%20ve%20manuel%20terapi%20seansı%20hakkında%20bilgi%20ve%20randevu%20almak%20istiyorum.
+  (All website WhatsApp buttons are configured with target="_blank" rel="noopener noreferrer")
 
 
 ------------------------------------------------------------------------------
-2. TARGET AUDIENCE & CAMPAIGN SETTINGS
+2. CAMPAIGN LEVEL SETTINGS
 ------------------------------------------------------------------------------
-- Target Location: İstanbul Anadolu Yakası (Kadıköy, Ataşehir, Üsküdar, 
-  Maltepe, Kartal + 10-15 km yarıçap)
-- Age Group: 25 - 55
-- Gender: All (Kadın & Erkek)
-- Interest Targeting:
-  * Physical fitness / Fitness ve Form
-  * Wellness / Sağlıklı Yaşam
-  * Massage / Masaj
-  * Running / Koşu / Spor
-  * Ergonomics / Masa başı çalışanlar
-- Placements: Instagram Feed, Instagram Stories, Facebook Feed, Reels.
+- Campaign Name:
+  [Traffic] Website Visits - Evde Masaj Anadolu Yakasi
 
+- Buying Type:
+  Auction (Müzayede)
 
-------------------------------------------------------------------------------
-3. AD OPTION 1: WHATSAPP MESSAGING CAMPAIGN (RECOMMENDED)
-------------------------------------------------------------------------------
-Campaign Goal: Messages (WhatsApp Business Direct Link)
-Destination: https://wa.me/905305799845?text=Merhaba,%20Anadolu%20Yakası%20evde%20masaj%20ve%20manuel%20terapi%20seansı%20hakkında%20bilgi%20ve%20randevu%20almak%20istiyorum.
+- Campaign Objective:
+  Traffic (Trafik) OR Sales/Conversions (Dönüşümler - Contact Event)
 
---- AD CREATIVE 1 (Focus: General Relaxation & Convenience) ---
+- Special Ad Categories:
+  None (Yok - Do NOT select Housing, Credit, Employment, or Politics)
 
-Primary Text (Ana Metin):
-Günün yorgunluğunu ve kas sertliklerinizi evinizin konforunda geride bırakın! 🌿
-
-Anadolu Yakası’nda adrese özel Sporcu Masajı, Duruş Masajı ve Relax Seansları 
-ile zindeliğinize kavuşun. Trafikte vakit kaybetmeden, sıra beklemeden kapınızda 
-profesyonel seans imkanı.
-
-📍 Hizmet Bölgeleri: Kadıköy, Ataşehir, Üsküdar, Maltepe ve çevresi.
-
-📲 Detaylı bilgi ve hızlı randevu için WhatsApp'tan bize hemen ulaşın!
-
-Headline (Başlık):
-Evinizde Konforlu Masaj & Manuel Terapi 📍
-
-Description (Açıklama):
-Kadıköy, Ataşehir, Üsküdar & Maltepe Bölgesi
-
-Call to Action (CTA Button):
-WhatsApp Mesajı Gönder (Send WhatsApp Message)
-
-
---- AD CREATIVE 2 (Focus: Desk Workers & Muscle Stiffness) ---
-
-Primary Text (Ana Metin):
-Masa başı çalışmaktan sırt ve boyun bölgenizde tutulma mı var? Veya antrenman 
-sonrası kaslarınızı hızlıca rahatlatmak mı istiyorsunuz? 💆‍♂️
-
-Evinizin rahatlığında birebir uygulanan tetik nokta masajı, duruş rahatlatma ve 
-derin doku seanslarımızla tanışın.
-
-✓ Esnek çalışma saatleri
-✓ Ev, otel veya ofis ortamına uygun taşınabilir ekipman
-✓ İlk bilgi alma ve değerlendirme tamamen ücretsiz!
-
-💬 Hemen mesaj gönderin, size en uygun seans saatini birlikte planlayalım.
-
-Headline (Başlık):
-Anadolu Yakası Adrese Özel Masaj Seansı 🚗
-
-Description (Açıklama):
-Trafik Yok, Sıra Yok — Kapınızda Seans Imkanı
-
-Call to Action (CTA Button):
-WhatsApp Mesajı Gönder (Send WhatsApp Message)
+- Advantage Campaign Budget (CBO):
+  Enabled / On
+  Daily Budget: 300 TL - 500 TL
 
 
 ------------------------------------------------------------------------------
-4. AD OPTION 2: INSTANT LEAD FORM CAMPAIGN (LEAD GENERATION)
+3. AD SET LEVEL SETTINGS
 ------------------------------------------------------------------------------
-Campaign Goal: Lead Generation (Hızlı Formlar)
-Form Fields Required:
-1. Ad Soyad (Full Name)
-2. Telefon Numarası (Phone Number)
-3. Bulunduğunuz İlçe (District: Kadıköy, Ataşehir, Üsküdar, Maltepe vb.)
+- Ad Set Name:
+  [AdSet] Anadolu Yakası - Age 25-55 - Wellness & Fitness
 
-Primary Text (Ana Metin):
-Anadolu Yakası’nda evinizin konforunda uzman masaj ve duruş danışmanlığı seansları! 📍
+- Conversion Location:
+  Website (Web Sitesi)
 
-⏱️ Trafikte vakit kaybetmeyin.
-🌿 Sporcu masajı, bölgesel rahatlama ve esneklik uygulamaları.
-🏠 Kendi evinizde rahatlatıcı ve özel seans deneyimi.
+- Performance Goal:
+  Maximize number of landing page views (Yönlendirme Sayfası Görüntülemelerini En Yüksek Sayıya Çıkarma)
 
-Aşağıdaki formu doldurun, uzmanımız size uygun seans saatleri ve detaylar için 
-hemen dönüş yapsın!
+- Location Targeting:
+  Location: İstanbul, Türkiye
+  Specific Districts: Kadıköy, Ataşehir, Üsküdar, Maltepe, Kartal (+15 km yarıçap)
 
-Headline (Başlık):
-Evde Özel Masaj Seansı Randevusu 📅
+- Demographics:
+  Age: 25 – 55
+  Gender: All (Kadın & Erkek)
+  Languages: Turkish (Türkçe)
 
-Description (Açıklama):
-Formu Doldurun, Sizi Arayalım
+- Detailed Targeting (Interests):
+  * Wellness (Sağlıklı Yaşam)
+  * Massage (Masaj)
+  * Physical fitness (Fitness ve Form)
+  * Running (Koşu)
+  * Physical exercise (Fiziksel Egzersiz)
 
-Call to Action (CTA Button):
-Kaydol / Bilgi Al (Sign Up / Get Quote)
+- Placements:
+  Advantage+ Placements (Otomatik Yerleşimler)
+  Or Manual Placements:
+  - Instagram Feed
+  - Instagram Stories & Reels
+  - Facebook Feed
+  - Facebook Reels
 
 
 ------------------------------------------------------------------------------
-5. RECOMMENDED DAILY BUDGET & SCHEDULE
+4. AD LEVEL CREATIVES & COPIES
 ------------------------------------------------------------------------------
-- Daily Budget: 200 TL - 500 TL (Testing Phase)
-- Bidding Strategy: Lowest Cost / Highest Volume
-- Best Operating Hours for Messaging Ads: 09:00 - 22:00
+
+==============================
+--- AD 1: GENERAL RELAXATION ---
+==============================
+- Ad Name:
+  [Ad 1] Evinizde Konforlu Masaj & Manuel Terapi
+
+- Format:
+  Single Image or Video (Tek Görsel / Video)
+
+- Media Asset File:
+  ./images/rahatlama_masaji.png OR ./images/manuel_terapi.png
+
+- Primary Text (Ana Metin):
+  Günün yorgunluğunu ve kas sertliklerinizi evinizin konforunda geride bırakın! 🌿
+
+  Anadolu Yakası’nda adrese özel Sporcu Masajı, Duruş Masajı ve Relax Seansları ile zindeliğinize kavuşun. Trafikte vakit kaybetmeden kapınızda profesyonel seans imkanı.
+
+  📍 Hizmet Bölgeleri: Kadıköy, Ataşehir, Üsküdar, Maltepe ve çevresi.
+
+  🔗 Hizmet detaylarımızı incelemek ve hızlı randevu oluşturmak için web sitemizi ziyaret edin!
+
+- Headline (Başlık):
+  Evinizde Konforlu Masaj & Manuel Terapi 📍
+
+- Description (Açıklama):
+  Kadıköy, Ataşehir, Üsküdar & Maltepe | Hızlı Randevu
+
+- Call to Action (CTA Button):
+  Learn More (Daha Fazla Bilgi Al) OR Contact Us (Bize Ulaşın)
+
+- Destination Website URL:
+  https://istanadoludeed.com/?utm_source=facebook&utm_medium=cpc&utm_campaign=traffic_masaj_anadolu&utm_content=ad1_relaxation
+
+
+==============================
+--- AD 2: DESK WORKERS & STIFFNESS ---
+==============================
+- Ad Name:
+  [Ad 2] Masa Başı Çalışanlar İçin Duruş & Tetik Nokta Masajı
+
+- Format:
+  Single Image or Video (Tek Görsel / Video)
+
+- Media Asset File:
+  ./images/mobilite_terapisi.png OR ./images/hareket_egzersizleri.png
+
+- Primary Text (Ana Metin):
+  Masa başı çalışmaktan sırt ve boyun bölgenizde tutulma mı var? Veya antrenman sonrası kaslarınızı hızlıca rahatlatmak mı istiyorsunuz? 💆‍♂️
+
+  Evinizin rahatlığında birebir uygulanan tetik nokta masajı, duruş rahatlatma ve derin doku seanslarımızla tanışın.
+
+  ✓ Esnek çalışma saatleri
+  ✓ Ev, otel veya ofis ortamına uygun taşınabilir ekipman
+  ✓ Ücretsiz ilk telefon danışmanlığı
+
+  🌐 Hizmet detaylarını görmek ve kolayca randevu almak için hemen tıklayın!
+
+- Headline (Başlık):
+  Anadolu Yakası Adrese Özel Masaj Seansı 🚗
+
+- Description (Açıklama):
+  Trafik Yok, Sıra Yok — Kapınızda Seans Imkanı
+
+- Call to Action (CTA Button):
+  Learn More (Daha Fazla Bilgi Al)
+
+- Destination Website URL:
+  https://istanadoludeed.com/?utm_source=facebook&utm_medium=cpc&utm_campaign=traffic_masaj_anadolu&utm_content=ad2_stiffness
+
+
+------------------------------------------------------------------------------
+5. FIELDS & TRACKING DATA
+------------------------------------------------------------------------------
+- Meta Pixel ID:
+  4361704310747199
+
+- Tracked Pixel Events:
+  * PageView (Automatic trigger on page load)
+  * Contact (Triggered on WhatsApp button click via: fbq('track', 'Contact'))
+
+- URL Parameters (UTM Fields):
+  utm_source=facebook&utm_medium=cpc&utm_campaign={{campaign.name}}&utm_content={{ad.name}}
+
+- Meta Appeal / Dispute Category Text (If Review Needed):
+  "Our website istanadoludeed.com provides wellness coaching, mobility exercise consulting, relaxation massage, and manual bodywork. We do not provide medical treatments, diagnosis, or patient care. Please re-classify our domain as Wellness / Fitness."
 ==============================================================================
