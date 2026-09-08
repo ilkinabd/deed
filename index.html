@@ -10,6 +10,21 @@
       gtag('js', new Date());
 
       gtag('config', 'AW-679322535');
+      gtag('event', 'conversion', { 'send_to': 'AW-679322535/gkW0CMbGnvEcEKfH9sMC' });
+
+      // Google Ads & Meta Pixel Manuel Dönüşüm Takibi
+      function trackConversion(label) {
+        var sendTo = 'AW-679322535';
+        if (label) {
+          sendTo = label.indexOf('/') !== -1 ? label : ('AW-679322535/' + label);
+        }
+        if (typeof gtag === 'function') {
+          gtag('event', 'conversion', { 'send_to': sendTo });
+        }
+        if (typeof fbq === 'function') {
+          fbq('track', 'Contact');
+        }
+      }
     </script>
 
     <meta charset="UTF-8">
@@ -492,10 +507,10 @@
             <!-- Ana Dönüşüm Butonları -->
             <div class="cta-container">
                 <a href="https://wa.me/905305799845?text=Merhaba,%20Anadolu%20Yakası%20evde%20masaj%20ve%20manuel%20terapi%20seansı%20hakkında%20bilgi%20ve%20randevu%20almak%20istiyorum."
-                    target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" onclick="fbq('track', 'Contact');">
+                    target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" onclick="trackConversion('3VXYCMCAqPEcEKfH9sMC');">
                     💬 WhatsApp İle Detaylı Bilgi Alın
                 </a>
-                <a href="tel:+905305799845" class="btn btn-phone">
+                <a href="tel:+905305799845" class="btn btn-phone" onclick="trackConversion();">
                     📞 +90 530 579 98 45
                 </a>
             </div>
@@ -619,7 +634,7 @@
     <!-- Alt Kısımda Sabit Duran Hızlı Mesaj Butonu -->
     <div class="sticky-bottom">
         <a href="https://wa.me/905305799845?text=Merhaba,%20Anadolu%20Yakası%20evde%20masaj%20ve%20manuel%20terapi%20seansı%20hakkında%20bilgi%20ve%20randevu%20almak%20istiyorum."
-            target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" onclick="fbq('track', 'Contact');">
+            target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" onclick="trackConversion('3VXYCMCAqPEcEKfH9sMC');">
             💬 WhatsApp İle Randevu Oluştur
         </a>
     </div>
