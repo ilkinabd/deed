@@ -4,9 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anadolu Yakası Evde Fizyoterapi & Manuel Terapi | Hızlı Randevu</title>
+    <title>Anadolu Yakası Evde Masaj & Manuel Terapi | Hızlı Randevu</title>
     <meta name="description"
-        content="Kadıköy, Ataşehir, Üsküdar ve Maltepe bölgesinde evinizde uzman fizyoterapist hizmeti. Bel/boyun ağrıları, felç rehabilitasyonu ve medikal terapi için hemen WhatsApp'tan ulaşın.">
+        content="Kadıköy, Ataşehir, Üsküdar ve Maltepe bölgesinde evinizde özel masaj ve manuel terapi hizmeti. Sporcu masajı, duruş masajı, relax rahatlama ve bölgesel tetik nokta uygulamaları için WhatsApp'tan hemen ulaşın.">
+    <meta name="keywords" content="Anadolu Yakası evde masaj, Kadıköy evde masaj, Ataşehir evde manuel terapi, Üsküdar sporcu masajı, Maltepe mobil masaj, evde masaj seansı, tetik nokta masajı, kulunç masajı">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://istanadoludeed.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://istanadoludeed.com/">
+    <meta property="og:title" content="Anadolu Yakası Evde Masaj & Manuel Terapi | Hızlı Randevu">
+    <meta property="og:description" content="Kadıköy, Ataşehir, Üsküdar ve Maltepe bölgesinde evinizde özel masaj ve manuel terapi hizmeti. Sporcu masajı, duruş masajı ve rahatlama seansları.">
+    <meta property="og:image" content="https://istanadoludeed.com/images/rahatlama_masaji.png">
+    <meta property="og:locale" content="tr_TR">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://istanadoludeed.com/">
+    <meta name="twitter:title" content="Anadolu Yakası Evde Masaj & Manuel Terapi | Hızlı Randevu">
+    <meta name="twitter:description" content="Kadıköy, Ataşehir, Üsküdar ve Maltepe bölgesinde evinizde özel masaj ve manuel terapi hizmeti.">
+    <meta name="twitter:image" content="https://istanadoludeed.com/images/rahatlama_masaji.png">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HealthAndBeautyBusiness",
+      "name": "Anadolu Yakası Evde Masaj & Manuel Terapi",
+      "image": "https://istanadoludeed.com/images/rahatlama_masaji.png",
+      "url": "https://istanadoludeed.com/",
+      "telephone": "+905305799845",
+      "priceRange": "₺₺",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "İstanbul",
+        "addressRegion": "Anadolu Yakası",
+        "addressCountry": "TR"
+      },
+      "areaServed": [
+        "Kadıköy",
+        "Ataşehir",
+        "Üsküdar",
+        "Maltepe",
+        "Kartal"
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "22:00"
+      },
+      "description": "Kadıköy, Ataşehir, Üsküdar ve Maltepe bölgesinde evinizde özel masaj, sporcu masajı, rahatlama ve manuel terapi seansları."
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Evde masaj ve manuel terapi seansı nasıl gerçekleşiyor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Seans öncesi ihtiyacınız değerlendirilir. Taşınabilir masaj masası ve hijyenik malzemeler ile evinizde konforlu bir masaj alanı oluşturularak seans uygulanır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Anadolu Yakası'nda hangi bölgelere eve masaj hizmetiniz var?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Başta Kadıköy, Ataşehir, Üsküdar, Maltepe ve Kartal olmak üzere İstanbul Anadolu Yakası genelinde mobil masaj seansı sunulmaktadır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Sporcu masajı ile relax rahatlama masajı arasındaki fark nedir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sporcu masajı derin doku teknikleriyle yoğun kas sertliklerini ve tutulmaları çözmeye odaklanırken, relax masaj günlük stresi azaltmak ve genel rahatlama sağlamak için uygulanır."
+          }
+        }
+      ]
+    }
+    </script>
 
     <!-- Meta Pixel Code -->
     <script>
@@ -272,6 +363,77 @@
             font-weight: bold;
         }
 
+        /* SSS / FAQ Accordion Styles */
+        .faq-section {
+            margin-top: 10px;
+        }
+
+        .faq-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .faq-item {
+            background: #ffffff;
+            border: 1px solid #E2E8F0;
+            border-radius: 10px;
+            padding: 14px 16px;
+            transition: background 0.2s;
+        }
+
+        .faq-item[open] {
+            background: #F8FAFC;
+        }
+
+        .faq-question {
+            font-weight: 700;
+            color: var(--dark-navy);
+            cursor: pointer;
+            font-size: 15px;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-question::after {
+            content: "+";
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .faq-item[open] .faq-question::after {
+            content: "−";
+        }
+
+        .faq-answer {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #475569;
+            line-height: 1.6;
+        }
+
+        /* SEO Footer */
+        .seo-footer {
+            text-align: center;
+            padding: 24px 20px 40px 20px;
+            font-size: 12px;
+            color: #64748B;
+            background: #F1F5F9;
+            border-top: 1px solid #E2E8F0;
+            margin-top: 30px;
+        }
+
+        .seo-footer p {
+            margin-bottom: 8px;
+        }
+
         /* Ekranın Altında Sabit Duran WhatsApp Butonu (Mobil Dönüşüm Odaklı) */
         .sticky-bottom {
             position: fixed;
@@ -298,17 +460,16 @@
 <body>
 
     <div class="top-bar">
-        📍 Anadolu Yakası Özel Evde Seans Hizmeti
+        📍 Anadolu Yakası Özel Evde Masaj & Manuel Terapi Seansları
     </div>
 
     <div class="container">
 
         <!-- Hero Bölümü -->
         <header class="hero">
-            <span class="badge">Uzman Fizyoterapist</span>
-            <h1>Evinizde Konforlu Fizik Tedavi ve Manuel Terapi</h1>
-            <p>Ağrılarınızdan kurtulmanız ve hareket özgürlüğünüze kavuşmanız için klinikten farksız uzman terapiyi
-                kapınıza getiriyorum.</p>
+            <span class="badge">Masaj & Manuel Terapi Uzmanı</span>
+            <h1>Evinizde Konforlu Masaj Terapisi ve Manuel Terapi</h1>
+            <p>Kas sertliklerinizi gidermek, tutulmaları açmak, stresi azaltmak ve zinde hissetmeniz için profesyonel masaj ve duruş uygulamalarını kapınıza getiriyorum.</p>
 
             <!-- Hizmet Bölgeleri -->
             <div class="locations">
@@ -320,7 +481,7 @@
 
             <!-- Ana Dönüşüm Butonları -->
             <div class="cta-container">
-                <a href="https://wa.me/905305799845?text=Merhaba,%20Anadolu%20Yakası%20evde%20fizik%20tedavi%20hakkında%20bilgi%20ve%20randevu%20almak%20istiyorum."
+                <a href="https://wa.me/905305799845?text=Merhaba,%20Anadolu%20Yakası%20evde%20masaj%20ve%20manuel%20terapi%20seansı%20hakkında%20bilgi%20ve%20randevu%20almak%20istiyorum."
                     class="btn btn-whatsapp" onclick="fbq('track', 'Contact');">
                     💬 WhatsApp İle Detaylı Bilgi Alın
                 </a>
@@ -332,96 +493,122 @@
 
         <!-- Hizmet Alanları -->
         <section class="section">
-            <h2 class="section-title">Uzmanlık ve Hizmet Alanları</h2>
+            <h2 class="section-title">Masaj ve Manuel Terapi Hizmetleri</h2>
             <div class="services-grid">
 
                 <div class="service-card">
                     <div class="service-image-wrapper">
-                        <img src="./images/manuel_terapi.png" alt="Manuel Terapi & Ağrı Yönetimi" class="service-img"
+                        <img src="./images/rahatlama_masaji.png" alt="Sporcu Masajı & Performans" class="service-img"
                             loading="lazy">
                         <span class="service-badge">1</span>
                     </div>
                     <div class="service-info">
-                        <h3>Manuel Terapi & Ağrı Yönetimi</h3>
-                        <p>Bel, boyun fıtıkları, tutulmalar ve kronik kas/eklem ağrılarına yönelik birebir elle müdahale
-                            ve rahatlatma.</p>
+                        <h3>Sporcu Masajı & Performans</h3>
+                        <p>Kas yorgunluğu, sertliği ve yoğun tempo sonrası derin doku teknikleriyle kasları hızlı toparlama ve rahatlatma seansı.</p>
                     </div>
                 </div>
 
                 <div class="service-card">
                     <div class="service-image-wrapper">
-                        <img src="./images/inme_rehabilitasyonu.png" alt="Evde Felç (İnme) Rehabilitasyonu"
+                        <img src="./images/manuel_terapi.png" alt="Manuel Terapi & Duruş Masajı"
                             class="service-img" loading="lazy">
                         <span class="service-badge">2</span>
                     </div>
                     <div class="service-info">
-                        <h3>Evde Felç (İnme) Rehabilitasyonu</h3>
-                        <p>Nörolojik hastalıklarda (İnme, Parkinson, MS) hastanın yaşam kalitesini ve bağımsız
-                            hareketini artıracak seanslar.</p>
+                        <h3>Manuel Terapi & Duruş Masajı</h3>
+                        <p>Omurga çevresi kasları rahatlatma, tutulmaları giderme ve duruş bozukluklarına yönelik birebir özel manuel masaj seansı.</p>
                     </div>
                 </div>
 
                 <div class="service-card">
                     <div class="service-image-wrapper">
-                        <img src="./images/ortopedik_rehabilitasyon.png" alt="Ortopedik Rehabilitasyon"
+                        <img src="./images/mobilite_terapisi.png" alt="Relax & Anti-Stres Masajı"
                             class="service-img" loading="lazy">
                         <span class="service-badge">3</span>
                     </div>
                     <div class="service-info">
-                        <h3>Ortopedik Rehabilitasyon</h3>
-                        <p>Protez, ameliyat veya kırık/çıkık sonrası hızlı ve güvenli iyileşme protokolleri.</p>
+                        <h3>Relax & Anti-Stres Masajı</h3>
+                        <p>Tüm vücutta günlük stresi ve yorgunluğu azaltan, kan dolaşımını canlandıran dinlendirici rahatlatıcı masaj seansı.</p>
                     </div>
                 </div>
 
                 <div class="service-card">
                     <div class="service-image-wrapper">
-                        <img src="./images/geriatrik_fizik_tedavi.png" alt="Geriatrik (Yaşlı Sağlığı) Fizik Tedavi"
+                        <img src="./images/denge_danismanligi.png" alt="Mobilite & Esneklik Masajı"
                             class="service-img" loading="lazy">
                         <span class="service-badge">4</span>
                     </div>
                     <div class="service-info">
-                        <h3>Geriatrik (Yaşlı Sağlığı) Fizik Tedavi</h3>
-                        <p>Yaşlı bireylerde denge, yürüyüş ve kas gücünü korumaya yönelik özel mobil seanslar.</p>
+                        <h3>Mobilite & Esneklik Masajı</h3>
+                        <p>Eklem hareket açıklığını artıran, kas gerginliğini çözen ve esneklik kazandıran aktif mobil masaj uygulamaları.</p>
                     </div>
                 </div>
 
                 <div class="service-card">
                     <div class="service-image-wrapper">
-                        <img src="./images/medical_masaj.png" alt="Medikal Masaj Terapisi" class="service-img"
+                        <img src="./images/hareket_egzersizleri.png" alt="Bölgesel Tetik Nokta Masajı" class="service-img"
                             loading="lazy">
                         <span class="service-badge">5</span>
                     </div>
                     <div class="service-info">
-                        <h3>Medikal Masaj Terapisi</h3>
-                        <p>Kas sertliğini gidermeye, kan dolaşımını düzenlemeye ve stresi hafifletmeye odaklı medikal
-                            dokunuşlar.</p>
+                        <h3>Bölgesel Tetik Nokta Masajı</h3>
+                        <p>Sırt, bel ve boyun bölgesindeki kas düğümleri (kulunç) ve tutulmalara odaklı derin doku rahatlatma seansı.</p>
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <!-- Neden Evde Fizyoterapi? (Güven Unsurları) -->
+        <!-- Neden Evde Masaj Seansı? (Güven Unsurları) -->
         <div class="features">
             <div class="feature-item">
-                <span class="check-mark">✓</span> Trafikte vakit kaybetmeden, evinizin konforunda seans imkanı.
+                <span class="check-mark">✓</span> Trafikte vakit kaybetmeden, evinizin konforunda özel masaj seansı imkanı.
             </div>
             <div class="feature-item">
-                <span class="check-mark">✓</span> Kişiye ve hastalığa özel birebir değerlendirme ve tedavi planı.
+                <span class="check-mark">✓</span> Kişiye ve kas yapısına özel birebir değerlendirme ve masaj programı.
             </div>
             <div class="feature-item">
-                <span class="check-mark">✓</span> Klinik, tıp merkezi, otel/spa veya ev ortamına uygun esnek saatler.
+                <span class="check-mark">✓</span> Ofis, otel/spa veya ev ortamına uygun esnek saatler.
             </div>
             <div class="feature-item">
-                <span class="check-mark">✓</span> İlk telefon/mesaj değerlendirmesi tamamen ücretsizdir.
+                <span class="check-mark">✓</span> İlk telefon/mesaj danışmanlığı tamamen ücretsizdir.
             </div>
         </div>
+
+        <!-- Sıkça Sorulan Sorular (SEO FAQ Accordion) -->
+        <section class="section faq-section">
+            <h2 class="section-title">Sıkça Sorulan Sorular (S.S.S)</h2>
+            <div class="faq-container">
+                <details class="faq-item">
+                    <summary class="faq-question">Evde masaj seansı nasıl gerçekleşiyor?</summary>
+                    <p class="faq-answer">Uzmanımız gerekli tüm seans ekipmanları ile adresinize gelir. Evinizde rahat ve hijyenik bir ortam oluşturarak kas yapınıza uygun özel masaj veya manuel uygulama gerçekleştirilir.</p>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">Anadolu Yakası'nda hangi bölgelere eve masaj hizmeti veriyorsunuz?</summary>
+                    <p class="faq-answer">Kadıköy, Ataşehir, Üsküdar, Maltepe, Kartal ve civar semtlerde adrese özel mobil masaj ve manuel terapi hizmeti sağlamaktayız.</p>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">Sporcu masajı ve tetik nokta masajı kimler için uygundur?</summary>
+                    <p class="faq-answer">Yoğun antrenman yapan sporcular, masa başı çalışanlar, sırt/boyun bölgesinde kulunç ve kas düğümü hisseden herkes için derin doku rahatlatma seanslarımız idealdir.</p>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">Randevuyu nasıl ve ne zaman oluşturabilirim?</summary>
+                    <p class="faq-answer">WhatsApp hattımız üzerinden dilediğiniz gün ve saat için kolayca randevu talep edebilirsiniz. Aynı gün için müsaitlik durumuna göre hızlı yönlendirme yapılabilmektedir.</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- SEO Footer -->
+        <footer class="seo-footer">
+            <p><strong>Hizmet Bölgeleri:</strong> Kadıköy Evde Masaj | Ataşehir Manuel Terapi | Üsküdar Sporcu Masajı | Maltepe Mobil Masaj | Kartal Masaj Seansı</p>
+            <p>© 2026 istanadoludeed.com - Anadolu Yakası Özel Masaj & Mobil Terapi Hizmetleri</p>
+        </footer>
 
     </div>
 
     <!-- Alt Kısımda Sabit Duran Hızlı Mesaj Butonu -->
     <div class="sticky-bottom">
-        <a href="https://wa.me/905305799845?text=Merhaba,%20Anadolu%20Yakası%20evde%20fizik%20tedavi%20hakkında%20bilgi%20ve%20randevu%20almak%20istiyorum."
+        <a href="https://wa.me/905305799845?text=Merhaba,%20Anadolu%20Yakası%20evde%20masaj%20ve%20manuel%20terapi%20seansı%20hakkında%20bilgi%20ve%20randevu%20almak%20istiyorum."
             class="btn btn-whatsapp" onclick="fbq('track', 'Contact');">
             💬 WhatsApp İle Randevu Oluştur
         </a>
