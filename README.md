@@ -47,7 +47,7 @@ Create the web directory for the project, copy all project files, and grant perm
 sudo mkdir -p /var/www/deed
 
 # Copy project folders (run from the project folder)
-sudo cp -r tr ru images /var/www/deed/
+sudo cp -r tr ru css images /var/www/deed/
 
 # Set ownership and permissions
 sudo chown -R www-data:www-data /var/www/deed

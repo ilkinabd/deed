@@ -2,25 +2,9 @@
 <html lang="ru">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-679322535"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'AW-679322535');
-      gtag('event', 'conversion', { 'send_to': 'AW-679322535/gkW0CMbGnvEcEKfH9sMC' });
-
-      // Google Ads & Meta Pixel Manuel Dönüşüm Takibi
-      function trackConversion(label) {
-        var sendTo = 'AW-679322535';
-        if (label) {
-          sendTo = label.indexOf('/') !== -1 ? label : ('AW-679322535/' + label);
-        }
-        if (typeof gtag === 'function') {
-          gtag('event', 'conversion', { 'send_to': sendTo });
-        }
+      // Meta Pixel Contact Event Tracking
+      function trackConversion() {
         if (typeof fbq === 'function') {
           fbq('track', 'Contact');
         }
@@ -142,399 +126,29 @@
       'https://connect.facebook.net/en_US/fbevents.js');
       fbq('init', '4361704310747199');
       fbq('track', 'PageView');
+      fbq('track', 'ViewContent');
+
+      // WhatsApp Button Click Tracking (Fires Contact & Lead standard events)
+      function trackWhatsAppClick() {
+        if (typeof fbq === 'function') {
+          fbq('track', 'Contact');
+          fbq('track', 'Lead');
+        }
+      }
+
+      // Phone Call Button Click Tracking (Fires Contact standard event)
+      function trackPhoneClick() {
+        if (typeof fbq === 'function') {
+          fbq('track', 'Contact');
+        }
+      }
     </script>
     <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=4361704310747199&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
 
-    <style>
-        :root {
-            --primary-color: #0084FF;
-            --whatsapp-green: #25D366;
-            --dark-navy: #0F172A;
-            --light-bg: #F8FAFC;
-            --text-color: #334155;
-            --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        }
-
-        body {
-            background-color: var(--light-bg);
-            color: var(--text-color);
-            line-height: 1.6;
-            padding-bottom: 80px;
-        }
-
-        /* Üst Bilgilendirme & Dil Değiştirici Bandı */
-        .top-bar {
-            background-color: var(--dark-navy);
-            color: #fff;
-            padding: 8px 16px;
-            font-size: 13px;
-            font-weight: 500;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 10px;
-            max-width: 720px;
-            margin: 0 auto;
-        }
-
-        .top-bar-text {
-            flex: 1;
-            line-height: 1.3;
-        }
-
-        .lang-switcher {
-            display: flex;
-            gap: 6px;
-            flex-shrink: 0;
-            white-space: nowrap;
-        }
-
-        .lang-btn {
-            color: #CBD5E1;
-            text-decoration: none;
-            font-weight: 600;
-            padding: 3px 8px;
-            border-radius: 4px;
-            font-size: 12px;
-            transition: background 0.2s, color 0.2s;
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
-        }
-
-        .lang-btn.active, .lang-btn:hover {
-            color: #FFFFFF;
-            background: rgba(255, 255, 255, 0.2);
-        }
-
-        @media (max-width: 580px) {
-            .top-bar {
-                flex-direction: column;
-                justify-content: center;
-                text-align: center;
-                padding: 8px 12px;
-                gap: 6px;
-            }
-            .top-bar-text {
-                font-size: 12px;
-            }
-            .lang-switcher {
-                justify-content: center;
-            }
-        }
-
-        .container {
-            max-width: 720px;
-            margin: 0 auto;
-            background: #ffffff;
-            min-height: 100vh;
-        }
-
-        /* Hero / Karşılama Alanı */
-        .hero {
-            padding: 24px 20px;
-            text-align: center;
-            background: linear-gradient(180deg, #EBF5FF 0%, #FFFFFF 100%);
-        }
-
-        .badge {
-            display: inline-block;
-            background-color: #E0F2FE;
-            color: #0369A1;
-            font-size: 12px;
-            font-weight: 700;
-            padding: 4px 12px;
-            border-radius: 50px;
-            margin-bottom: 12px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .hero h1 {
-            color: var(--dark-navy);
-            font-size: 23px;
-            line-height: 1.3;
-            margin-bottom: 12px;
-            font-weight: 800;
-        }
-
-        .hero p {
-            font-size: 15px;
-            color: #475569;
-            margin-bottom: 20px;
-        }
-
-        /* Hizmet Bölgeleri Etiketleri */
-        .locations {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 6px;
-            margin-bottom: 20px;
-        }
-
-        .location-tag {
-            background-color: #F1F5F9;
-            color: #475569;
-            font-size: 12px;
-            padding: 4px 10px;
-            border-radius: 6px;
-            font-weight: 600;
-        }
-
-        /* Ana Çağrı Butonları */
-        .cta-container {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            margin: 15px 0;
-        }
-
-        .btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            padding: 16px;
-            border-radius: 12px;
-            font-size: 16px;
-            font-weight: 700;
-            text-decoration: none;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .btn:active {
-            transform: scale(0.98);
-        }
-
-        .btn-whatsapp {
-            background-color: var(--whatsapp-green);
-            color: #ffffff;
-            box-shadow: 0 4px 14px rgba(37, 211, 102, 0.39);
-        }
-
-        .btn-phone {
-            background-color: var(--dark-navy);
-            color: #ffffff;
-        }
-
-        /* Hizmet Kartları */
-        .section {
-            padding: 20px;
-        }
-
-        .section-title {
-            font-size: 18px;
-            color: var(--dark-navy);
-            margin-bottom: 16px;
-            font-weight: 700;
-            border-left: 4px solid var(--primary-color);
-            padding-left: 10px;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 16px;
-        }
-
-        .service-card {
-            background: #ffffff;
-            border: 1px solid #E2E8F0;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: var(--card-shadow);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 24px -5px rgba(0, 0, 0, 0.08);
-        }
-
-        .service-image-wrapper {
-            position: relative;
-            width: 100%;
-            height: 190px;
-            background-color: #F1F5F9;
-            overflow: hidden;
-        }
-
-        .service-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-            transition: transform 0.3s ease;
-        }
-
-        .service-card:hover .service-img {
-            transform: scale(1.03);
-        }
-
-        .service-badge {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background: rgba(15, 23, 42, 0.85);
-            backdrop-filter: blur(4px);
-            color: #ffffff;
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 13px;
-            font-weight: 700;
-        }
-
-        .service-info {
-            padding: 16px;
-        }
-
-        .service-info h3 {
-            font-size: 16px;
-            color: var(--dark-navy);
-            margin-bottom: 6px;
-            font-weight: 700;
-        }
-
-        .service-info p {
-            font-size: 13.5px;
-            color: #64748B;
-            line-height: 1.5;
-        }
-
-        /* Süreç ve Güven Unsurları */
-        .features {
-            background-color: #F8FAFC;
-            padding: 20px;
-            border-radius: 12px;
-            margin: 20px;
-        }
-
-        .feature-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 14px;
-            margin-bottom: 10px;
-            color: #334155;
-            font-weight: 500;
-        }
-
-        .feature-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .check-mark {
-            color: var(--whatsapp-green);
-            font-weight: bold;
-        }
-
-        /* SSS / FAQ Accordion Styles */
-        .faq-section {
-            margin-top: 10px;
-        }
-
-        .faq-container {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .faq-item {
-            background: #ffffff;
-            border: 1px solid #E2E8F0;
-            border-radius: 10px;
-            padding: 14px 16px;
-            transition: background 0.2s;
-        }
-
-        .faq-item[open] {
-            background: #F8FAFC;
-        }
-
-        .faq-question {
-            font-weight: 700;
-            color: var(--dark-navy);
-            cursor: pointer;
-            font-size: 15px;
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .faq-question::-webkit-details-marker {
-            display: none;
-        }
-
-        .faq-question::after {
-            content: "+";
-            font-size: 18px;
-            font-weight: 700;
-            color: var(--primary-color);
-        }
-
-        .faq-item[open] .faq-question::after {
-            content: "−";
-        }
-
-        .faq-answer {
-            margin-top: 10px;
-            font-size: 14px;
-            color: #475569;
-            line-height: 1.6;
-        }
-
-        /* SEO Footer */
-        .seo-footer {
-            text-align: center;
-            padding: 24px 20px 40px 20px;
-            font-size: 12px;
-            color: #64748B;
-            background: #F1F5F9;
-            border-top: 1px solid #E2E8F0;
-            margin-top: 30px;
-        }
-
-        .seo-footer p {
-            margin-bottom: 8px;
-        }
-
-        /* Ekranın Altında Sabit Duran WhatsApp Butonu */
-        .sticky-bottom {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: #ffffff;
-            padding: 12px 20px;
-            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.08);
-            display: flex;
-            justify-content: center;
-            z-index: 1000;
-        }
-
-        .sticky-bottom .btn {
-            width: 100%;
-            max-width: 560px;
-            padding: 14px;
-            font-size: 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -571,7 +185,7 @@
             <!-- Ana Dönüşüm Butonları -->
             <div class="cta-container">
                 <a href="https://wa.me/905305799845?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%AF%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B0%D0%BD%D1%82%D0%B8%D1%86%D0%B5%D0%BB%D0%BB%D1%8E%D0%BB%D0%B8%D1%82%D0%BD%D1%8B%D0%B9%20%D0%BC%D0%B0%D1%81%D1%81%D0%B0%D0%B6%20%D0%B8%20%D0%BA%D0%BE%D1%80%D1%80%D0%B5%D0%BA%D1%86%D0%B8%D1%8E%20%D1%84%D0%B8%D0%B3%D1%83%D1%80%D1%8B%20%D0%BD%D0%B0%20%D0%B4%D0%BE%D0%BC%D1%83."
-                    target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" onclick="trackConversion('3VXYCMCAqPEcEKfH9sMC');">
+                    target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" onclick="trackConversion();">
                     💬 Написать в WhatsApp
                 </a>
                 <a href="tel:+905305799845" class="btn btn-phone" onclick="trackConversion();">
@@ -698,7 +312,7 @@
     <!-- Alt Kısımda Sabit Duran Hızlı Mesaj Butonu -->
     <div class="sticky-bottom">
         <a href="https://wa.me/905305799845?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%AF%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B0%D0%BD%D1%82%D1%86%D0%B5%D0%BB%D0%BB%D1%8E%D0%BB%D0%B8%D1%82%D0%BD%D1%8B%D0%B9%20%D0%BC%D0%B0%D1%81%D1%81%D0%B0%D0%B6%20%D0%B8%20%D0%BA%D0%BE%D1%80%D1%80%D0%B5%D0%BA%D1%86%D0%B8%D1%8E%20%D1%84%D0%B8%D0%B3%D1%83%D1%80%D1%8B%20%D0%BD%D0%B0%20%D0%B4%D0%BE%D0%BC%D1%83."
-            target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" onclick="trackConversion('3VXYCMCAqPEcEKfH9sMC');">
+            target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" onclick="trackConversion();">
             💬 Записаться в WhatsApp
         </a>
     </div>
