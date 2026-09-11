@@ -54,25 +54,33 @@
   Location: İstanbul, Türkiye
   Specific Districts: Kadıköy, Ataşehir, Üsküdar, Maltepe, Kartal (+15 km yarıçap)
 
-- Demographics:
+- Demographics & Geographic Scope:
+  Location: İstanbul, Türkiye (Anadolu Yakası focus)
+  Specific Districts: Kadıköy, Ataşehir, Üsküdar, Maltepe, Kartal (+10-15 km radius)
   Age: 25 – 55
   Gender: All (Kadın & Erkek)
   Languages: Turkish (Türkçe)
 
-- Detailed Targeting (Interests):
-  * Wellness (Sağlıklı Yaşam)
-  * Massage (Masaj)
-  * Physical fitness (Fitness ve Form)
-  * Running (Koşu)
-  * Physical exercise (Fiziksel Egzersiz)
+- Detailed Targeting Strategy (3 Recommended Ad Sets):
 
-- Placements:
-  Advantage+ Placements (Otomatik Yerleşimler)
-  Or Manual Placements:
-  - Instagram Feed
-  - Instagram Stories & Reels
-  - Facebook Feed
-  - Facebook Reels
+  [AD SET A: Kurumsal & Masa Başı Çalışanlar (Sırt/Boyun Ağrısı Odaklı)]
+  - Core Interests: Massage (Masaj), Wellness (Sağlıklı yaşam), Back pain (Sırt ağrısı), Physical therapy (Fizik tedavi)
+  - Narrowed by (MUST ALSO MATCH):
+    * Industries: Business and Finance, Management, Information Technology, Engineering, Law
+    * Behaviors: People who prefer high-value goods in Turkey (Türkiye'de yüksek değerli ürünleri tercih eden kişiler)
+
+  [AD SET B: Sporcular & Aktif Yaşam (Derin Doku & Mobilite)]
+  - Core Interests: CrossFit, Physical fitness, Running, Pilates, Yoga, Sports recovery
+  - Narrowed by (MUST ALSO MATCH):
+    * Interests: Massage, Physical therapy, Wellness
+
+  [AD SET C: Premium Lüks Yaşam & Çalışan Ebeveynler (Evde Konfor)]
+  - Behaviors: Frequent Travelers, Frequent international travelers, People who prefer high-value goods in Turkey
+  - Demographics & Life Events: Working parent, Motherhood, Recently moved
+  - Interests: Spa, Luxury goods, Self-care
+
+- Exclusions (Haric Tutulacaklar):
+  - Exclude work positions: Massage therapist, Masseuse, Physical therapy assistant (Kendi meslektaşlarınıza reklam bütçesi harcamamak için)
 
 
 ------------------------------------------------------------------------------
@@ -147,6 +155,69 @@
 
 - Destination Website URL:
   https://istanadoludeed.com/?utm_source=facebook&utm_medium=cpc&utm_campaign=traffic_masaj_anadolu&utm_content=ad2_stiffness
+
+
+==============================
+--- AD 3: ATHLETES & SPORTS RECOVERY (SPORCULAR İÇİN) ---
+==============================
+- Ad Name:
+  [Ad 3] Sporcular İçin Derin Doku Sporcu Masajı & Mobilite
+
+- Format:
+  Single Image or Video (Tek Görsel / Video)
+
+- Media Asset File:
+  ./images/rahatlama_masaji.png OR ./images/hareket_egzersizleri.png
+
+- Primary Text (5 Variations for Meta Dynamic Optimizations):
+
+  Option 1 (Performans & Toparlanma Odaklı):
+  Antrenman sonrası oluşan kas yorgunluğu ve sertlikleri performansınızı düşürmesin! 🏃‍♂️⚡
+  Anadolu Yakası’nda adrese özel Derin Doku Sporcu Masajı ve Mobilite seansları ile kaslarınızı hızlıca toparlayın. Salondan eve döndükten sonra trafikte vakit kaybetmeden evinizin konforunda seans imkanı.
+  📍 Hizmet Bölgeleri: Kadıköy, Ataşehir, Üsküdar, Maltepe ve çevresi.
+  📲 Randevu ve detaylı bilgi için hemen WhatsApp'tan ulaşın!
+
+  Option 2 (Tetik Nokta & Kas Ağrısı Odaklı):
+  Yoğun antrenmanlar sonrası bacak, sırt ve omuz bölgenizde tutulma mı var? 🏋️‍♂️💆‍♂️
+  Adresinize gelen profesyonel masaj ekipmanı ile tetik nokta rahatlatma, kas esnetme ve derin doku seanslarımızı deneyimleyin. Sakatlanma riskini azaltın, hareket kabiliyetinizi artırın!
+  ✓ Evde & otelde esnek saatlerde seans imkanı
+  ✓ Ücretsiz ilk durum değerlendirmesi
+  🔗 Detaylı bilgi ve randevu için tıklayın!
+
+  Option 3 (Mobilite & Esneklik Odaklı):
+  CrossFit, koşu, fitness veya yoğun spor sonrası kaslarınızın ihtiyacı olan profesyonel dokunuş kapınızda! 🏆🌿
+  Eklem hareket açıklığınızı artırmak ve kas sertliklerini çözmek için adrese özel Sporcu Masajı seansı sunuyoruz.
+  📍 Kadıköy - Ataşehir - Üsküdar - Maltepe
+  💬 WhatsApp üzerinden 1 dakikada hızlı randevu oluşturun!
+
+  Option 4 (Kısa & Mobil Odaklı):
+  Antrenman bitti, sıra kasları toparlamada! ⚡ Evinizin konforunda adrese özel Derin Doku Sporcu Masajı ile zindeliğinize kavuşun. Trafik yok, sıra beklemek yok. 🚗📍 Kadıköy, Ataşehir, Üsküdar & Maltepe. Hızlı randevu için tıklayın!
+
+  Option 5 (Birebir & Profesyonel Seans Odaklı):
+  Spor performansınızı bir üst seviyeye taşıyın! 🧘‍♂️ Spor sonrası kas laktik asit birikimini ve tutulmaları hafifleten özel mobil masaj uygulamaları ile kapınızdayız.
+  ✓ Taşınabilir hijyenik masaj masası
+  ✓ Birebir kişiye özel seans
+  👉 Detaylar ve randevu için web sitemizi ziyaret edin!
+
+- Headlines (5 Variations):
+  1. Antrenman Sonrası Sporcu Masajı Evinizde 🏋️‍♂️
+  2. Kas Sertliklerini ve Tutulmaları Geride Bırakın ⚡
+  3. Anadolu Yakası Adrese Özel Derin Doku Masajı 📍
+  4. Performansınızı ve Mobiliteyi Artırın 🏃‍♂️
+  5. Trafikte Yorulmayın — Kapınızda Seans Imkanı 🚗
+
+- Descriptions (5 Variations):
+  1. Kadıköy, Ataşehir, Üsküdar & Maltepe | Hızlı Randevu
+  2. Derin Doku & Mobilite Seansı | WhatsApp İletişim
+  3. Antrenman Sonrası Hızlı Kas Toparlanması
+  4. Esnek Çalışma Saatleri & Adrese Özel Hizmet
+  5. Ücretsiz İlk Telefon Danışmanlığı
+
+- Call to Action (CTA Button):
+  Contact Us (Bize Ulaşın) OR Learn More (Daha Fazla Bilgi Al)
+
+- Destination Website URL:
+  https://istanadoludeed.com/?utm_source=facebook&utm_medium=cpc&utm_campaign=traffic_masaj_anadolu&utm_content=ad3_sporcular
 
 
 ------------------------------------------------------------------------------

@@ -1,0 +1,235 @@
+==============================================================================
+                   META (FACEBOOK/INSTAGRAM) ADS SETUP PACK (RUSSIAN)
+                   Target Audience: Russian Expats & Residents in Istanbul
+                   Campaign Type: Website Traffic & Conversions
+                   Target Domain: https://istanadoludeed.com/ru/
+==============================================================================
+
+------------------------------------------------------------------------------
+1. WEBSITE URL (DESTINATION & LANDING PAGE)
+------------------------------------------------------------------------------
+- Main Russian Landing Page URL:
+  https://istanadoludeed.com/ru/
+
+- Target Landing Page with UTM Tracking:
+  https://istanadoludeed.com/ru/?utm_source=facebook&utm_medium=cpc&utm_campaign=ru_istanbul_massage&utm_content=ad1
+
+- WhatsApp Direct Contact URL (Opened via target="_blank"):
+  https://wa.me/905305799845?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%AF%20%D1%85%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5%20%D0%B8%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BC%D0%B0%D1%81%D1%81%D0%B0%D0%B6%20%D0%BD%D0%B0%20%D0%B4%D0%BE%D0%BC%D1%83.
+
+
+------------------------------------------------------------------------------
+2. CAMPAIGN LEVEL SETTINGS
+------------------------------------------------------------------------------
+- Campaign Name:
+  [Traffic] Website Visits - Ru Expats Massage Istanbul
+
+- Buying Type:
+  Auction (Аукцион)
+
+- Campaign Objective:
+  Traffic (Трафик) OR Sales/Conversions (Конверсии - Contact Event)
+
+- Special Ad Categories:
+  None (Нет - Не выбирать Категории жилья, кредитов или политики)
+
+- Advantage Campaign Budget (CBO):
+  Enabled / On
+  Daily Budget: 300 TL - 600 TL
+
+
+------------------------------------------------------------------------------
+3. AD SET LEVEL SETTINGS
+------------------------------------------------------------------------------
+- Ad Set Name:
+  [AdSet] Istanbul Russian Speakers - Age 22-55 - Body & Wellness
+
+- Conversion Location:
+  Website (Веб-сайт)
+
+- Performance Goal:
+  Maximize number of landing page views (Максимум просмотров целевой страницы)
+
+- Location & Language Targeting:
+  Location: İstanbul, Türkiye (Focus: Kadıköy, Ataşehir, Üsküdar, Maltepe, Kartal + General Istanbul)
+  Age: 22 – 55
+  Gender: All (Женщины & Мужчины)
+  Languages: Russian (Русский)
+
+- Detailed Targeting Strategy (3 Recommended Ad Sets):
+
+  [AD SET A: Коррекция фигура & Антицеллюлитный массаж (Женская аудитория)]
+  - Core Interests: Cellulite (Целлюлит), Body shaping (Коррекция фигуры), Massage (Массаж), SPA, Beauty, Fitness
+  - Demographics: Women (Женщины) 22-50
+  - Narrowed by (Обязательное совпадение):
+    * Interests: Anti-cellulite, Skin care, Honey massage, Wellness
+
+  [AD SET B: Снятие зажимов — ШВЗ, Спина, Поясница & Массаж Стоп (Удаленка / IT / Офис)]
+  - Core Interests: Back pain (Боль в спине), Neck pain (Боль в шее), Physical therapy, Massage therapy
+  - Demographics: Men & Women 25-55
+  - Narrowed by (Обязательное совпадение):
+    * Industries/Interests: Information Technology, Remote work, Management, Engineering
+
+  [AD SET C: Экспаты & Премиальный уход на дому (Комфорт без пробок)]
+  - Behaviors: Expats (Russian-speaking), Recently moved, Frequent international travelers
+  - Demographics & Interests: Luxury goods, Self-care, Personal health
+
+- Exclusions (Исключения):
+  - Exclude work positions: Massage therapist, Masseuse, Physiotherapist (Исключить коллег-массажистов)
+
+
+------------------------------------------------------------------------------
+4. AD LEVEL CREATIVES & COPIES
+------------------------------------------------------------------------------
+
+==============================
+--- AD 1: АНТИЦЕЛЛЮЛИТНЫЙ МАССАЖ & КОРРЕКЦИЯ ФИГУРЫ ---
+==============================
+- Ad Name:
+  [Ad 1] Антицеллюлитный Массаж & Коррекция Фигуры на Дому
+
+- Format:
+  Single Image or Video (Одно изображение / Видео)
+
+- Media Asset File:
+  ./images/rahatlama_masaji.png OR ./images/manuel_terapi.png
+
+- Primary Text (Основной текст):
+  Мечтаете о гладкой коже, упругости и тонусе без поездок по пропкам Стамбула? ✨💃
+
+  Профессиональный Антицеллюлитный массаж, Коррекция фигуры и Медовый массаж с выездом к вам домой!
+
+  ✓ Ручная проработка проблемных зон и лимфодренаж
+  ✓ Выезд со складывающейся кушеткой и премиальными маслами
+  ✓ Азиатская сторона: Кадыкёй, Аташехир, Ускюдар, Мальтепе, Картал
+
+  📍 Забудьте о суете — уход за телом в комфортной домашней обстановке!
+
+  📲 Жмите на ссылку, чтобы посмотреть услуги и записаться через WhatsApp!
+
+- Headline (Заголовок):
+  Антицеллюлитный Массаж & Коррекция Фигуры 🌿
+- Description (Описание):
+  Выезд на дом в Стамбуле | Быстрая запись в WhatsApp
+
+- Call to Action (CTA Button):
+  Learn More (Подробнее) OR Contact Us (Связаться)
+
+- Destination Website URL:
+  https://istanadoludeed.com/ru/?utm_source=facebook&utm_medium=cpc&utm_campaign=ru_istanbul_massage&utm_content=ad1_anticellulite
+
+
+==============================
+--- AD 2: ШВЗ, ПОЯСНИЦА & МАССАЖ СТОП (СНЯТИЕ ЗАЖИМОВ) ---
+==============================
+- Ad Name:
+  [Ad 2] Массаж ШВЗ, Поясницы & Массаж Стоп на Дому
+
+- Format:
+  Single Image or Video (Одно изображение / Видео)
+
+- Media Asset File:
+  ./images/mobilite_terapisi.png OR ./images/hareket_egzersizleri.png
+
+- Primary Text (Основной текст):
+  Беспокоит напряжение в шее, плечах или пояснице после работы за компьютером? Или устают ноги после долгих прогулок? 💆‍♂️🦶
+
+  Закажите профессиональный массаж на дом в Стамбуле!
+
+  • Массаж ШВЗ (шейно-воротниковой зоны) и грудного отдела
+  • Глубокая проработка поясницы и зажимов спины
+  • Точечный массаж стоп для полного расслабления
+
+  🚗 Массажист приезжает к вам со всем оборудованием. Никаких пробок и потери времени.
+
+  🌐 Узнайте детали и выберите удобное время на нашем сайте!
+
+- Headline (Заголовок):
+  Массаж ШВЗ, Поясницы & Массаж Стоп на Дому 📍
+- Description (Описание):
+  Стамбул (Азиатская сторона) | Без пробок и ожидания
+
+- Call to Action (CTA Button):
+  Learn More (Подробнее)
+
+- Destination Website URL:
+  https://istanadoludeed.com/ru/?utm_source=facebook&utm_medium=cpc&utm_campaign=ru_istanbul_massage&utm_content=ad2_shvz_foot
+
+
+==============================
+--- AD 3: ВЫЕЗДНОЙ МАССАЖ В СТАМБУЛЕ (ДИНАМИЧЕСКИЕ ВАРИАЦИИ) ---
+==============================
+- Ad Name:
+  [Ad 3] Выездной Массаж на Дому в Стамбуле (Динамические оптимизации)
+
+- Format:
+  Single Image or Video (Одно изображение / Видео)
+
+- Media Asset File:
+  ./images/rahatlama_masaji.png OR ./images/denge_danismanligi.png
+
+- Primary Text (5 Вариантов для Dynamic Creative Optimization):
+
+  Option 1 (Коррекция фигуры & Медовый массаж):
+  Идеальные контуры тела и подтянутая кожа — прямо у вас дома! 🍯✨
+  Закажите курс Антицеллюлитного и Медового массажа в Стамбуле. Выезд специалиста со складывающейся кушеткой в Кадыкёй, Аташехир, Ускюдар и Мальтепе.
+  👉 Запись и детали — в 1 клик через WhatsApp!
+
+  Option 2 (Снятие болей в спине & ШВЗ):
+  Чувствуете тяжесть в шее и пояснице? 💆‍♀️
+  Специалист по массажу и мануальным техникам приедет к вам домой. Проработка ШВЗ, пояснично-грудного отдела и массаж стоп помогут вернуть бодрость и лёгкость.
+  📍 Кадыкёй, Аташехир, Ускюдар, Мальтепе, Картал.
+  📲 Нажмите, чтобы записаться!
+
+  Option 3 (Экспаты & Домашний комфорт):
+  Живете в Стамбуле и ищете качественный выездной массаж? 🇹🇷🌿
+  Больше не нужно искать салоны и добираться по пробкам. Специалист приезжает к вам со всем необходимым оборудованием: антицеллюлитный, ШВЗ, спортивный, медовый массаж и расслабление стоп.
+  💬 Задайте вопрос в WhatsApp и забронируйте удобный час!
+
+  Option 4 (Короткий & Динамичный):
+  Массаж на дому в Стамбуле! 💆‍♂️⚡ Антицеллюлитный, медовый, ШВЗ, поясничный отдел и массаж стоп. Забудьте о пробках — профессиональный кушетка и масла у вас дома! 📍 Кадыкёй, Аташехир, Ускюдар & Мальтепе. Жмите для записи!
+
+  Option 5 (Спортивный & Глубокое расслабление):
+  Восстановите силы после тренировок или тяжелой рабочей недели! 🏃‍♂️💆‍♀️
+  Глубокий проминающий массаж спины, ШВЗ и рефлекторный массаж стоп у вас дома.
+  ✓ Профессиональный подход
+  ✓ Гигиенично и удобно
+  👉 Запишитесь на удобный день на сайте!
+
+- Headlines (5 Вариантов заголовков):
+  1. Выездной Массаж на Дому в Стамбуле 🌿
+  2. Антицеллюлитный & Медовый Массаж Дома 🍯
+  3. Массаж ШВЗ, Поясницы и Стоп | Выезд на Доку 📍
+  4. Коррекция Фигуры без Поездок в Салон ✨
+  5. Профессиональный Массаж в Кадыкёй & Аташехир 🚗
+
+- Descriptions (5 Вариантов описаний):
+  1. Кадыкёй, Аташехир, Ускюдар & Мальтепе | Запись онлайн
+  2. Быстрая запись через WhatsApp | Бесплатная консультация
+  3. Профессиональная кушетка & Премиум масла
+  4. Забудьте о пробках — Массаж у вас дома
+  5. Скидки при бронировании курса процедур
+
+- Call to Action (CTA Button):
+  Contact Us (Связаться) OR Learn More (Подробнее)
+
+- Destination Website URL:
+  https://istanadoludeed.com/ru/?utm_source=facebook&utm_medium=cpc&utm_campaign=ru_istanbul_massage&utm_content=ad3_dynamic
+
+
+------------------------------------------------------------------------------
+5. FIELDS & TRACKING DATA
+------------------------------------------------------------------------------
+- Meta Pixel ID:
+  4361704310747199
+
+- Tracked Pixel Events:
+  * PageView (Автоматический трекинг при загрузке страницы /ru/)
+  * Contact (Трекинг при клике на WhatsApp кнопку: fbq('track', 'Contact'))
+
+- URL Parameters (UTM Fields):
+  utm_source=facebook&utm_medium=cpc&utm_campaign={{campaign.name}}&utm_content={{ad.name}}
+
+- Meta Appeal / Dispute Category Text (Если потребуются разъяснения модерации):
+  "Our website istanadoludeed.com/ru/ provides wellness, mobility, body contouring, and relaxation massage services for home visits. We do not offer medical diagnosis, treatments, or medical procedures. Please classify our ads under Wellness / Fitness / Personal Care."
+==============================================================================
