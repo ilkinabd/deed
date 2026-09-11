@@ -51,7 +51,7 @@
   Maximize number of landing page views (Максимум просмотров целевой страницы)
 
 - Location & Language Targeting:
-  Location: İstanbul, Türkiye (Focus: Kadıköy, Ataşehir, Üsküdar, Maltepe, Kartal + General Istanbul)
+  Location: İstanbul, Türkiye (European Center: Beşiktaş, Şişli, Beyoğlu, Sarıyer, Bakırköy | Asian side: Kadıköy, Ataşehir, Üsküdar, Maltepe)
   Age: 22 – 55
   Gender: All (Женщины & Мужчины)
   Languages: Russian (Русский)
